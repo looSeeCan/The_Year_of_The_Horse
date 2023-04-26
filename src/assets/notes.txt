@@ -1,0 +1,10 @@
+04/25/23
+  I want to rebuild this code that I did from back in cycle.
+
+  build process
+    npm install --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin
+    created webpack.config.js
+    scripts in package.json
+    used horse.html as the entrypoin in the webpack.config.js
+    had an issue with html-loader, had to install: npm install --save-dev html-loader. and add the html-loader in webpack.config
+
