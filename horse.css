@@ -1,38 +1,54 @@
-html,
 body {
-  height: 100%;
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-html {
-  /* display: table; */
-  margin: auto;
-}
-
-body {
-  /* display: table-cell; */
-  /* vertical-align: middle; */
-  /* background-size: cover; */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
   background-image: url("./assets/horse3.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 786px) {
-  .mainMenu {
-    display: none;
-  }
-
-  .mainMenu.hamburger {
-    display: block;
-  }
+header,
+main {
+  text-align: center;
+  padding: 1rem;
 }
 
-@media (min-width: 769px) {
-  .mainMenu {
-    display: initial;
-  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  overflow-y: auto;
+}
 
-  #toggle-bar {
-    display: none;
-  }
+ul.mainMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.mainMenu li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
 }
