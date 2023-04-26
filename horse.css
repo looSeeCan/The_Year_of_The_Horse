@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  /* display: table; */
+  margin: auto;
+}
+
+body {
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  /* background-size: cover; */
+  background-image: url("./assets/horse3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 786px) {
+  .mainMenu {
+    display: none;
+  }
+
+  .mainMenu.hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mainMenu {
+    display: initial;
+  }
+
+  #toggle-bar {
+    display: none;
+  }
+}

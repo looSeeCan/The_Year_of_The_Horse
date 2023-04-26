@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2045</title>
+
+    <style>
+      body {
+        /* background-color: black; */
+      }
+
+      section {
+        padding: 1%;
+        border: 1px solid black;
+      }
+
+      p {
+        font-weight: bold;
+        font-family: cursive;
+      }
+
+      .pictures {
+        display: flex;
+      }
+
+      .pictures2 {
+        display: flex;
+      }
+      img {
+        /* float: left; */
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+        /* display: flexbox;
+                flex-wrap: wrap;
+                justify-content: center; */
+      }
+
+      #us {
+        width: 50%;
+        height: 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="text-align: center">
+      <h1>2045...... 66 years old</h1>
+    </header>
+    <div class="pictures" style="text-align: center">
+      <section>
+        <p>What will the next year be about? What do you envision?</p>
+        <img src="./assets/itsallaboutus.jpg" />
+      </section>
+      <section>
+        <p>What lessons do you want to learn?</p>
+        <img src="./assets/keepyourmariagestrong.jpg" />
+        <p>
+          After the kids have left the nest, I need to make sure that my
+          marriage is better than it has been
+        </p>
+      </section>
+      <section>
+        <p>What things do you want to earn?</p>
+        <img src="./assets/loveandrespect.png" />
+        <p>I need to make sure that I am still earning my wifes respect.</p>
+      </section>
+      <section>
+        <p>What are the things you can afford to lose?</p>
+        <img src="./assets/everything.jpg" />
+        <p>
+          I can now afford to lose everything. Because I have the only thing I
+          need.
+        </p>
+      </section>
+      <section>
+        <p>What are the skills you hope to gain?</p>
+        <img src="./assets/relationship.jpg" />
+        <p>
+          I hope that by this time my relationship skills with family, friends,
+          and workplace are at a level that I have closure with.
+        </p>
+      </section>
+      <section>
+        <p>What will you change from this year?</p>
+        <img src="./assets/travel.jpeg" />
+        <p>
+          Get rid of all the major material things that hold us down and travel
+          the world.
+        </p>
+      </section>
+    </div>
+    <div class="pictures2" style="text-align: center">
+      <section>
+        <p>What will you take with you from this year?</p>
+        <img src="./assets/justyouandme.png" />
+      </section>
+      <section>
+        <p>What is your wish for next year?</p>
+        <img src="./assets/oldhealth.jpg" />
+        <p>I wish for health as an old couple. Mind and Body.</p>
+      </section>
+      <section>
+        <p>What will your favorite dish?</p>
+        <img src="./assets/pepper6.jpg" />
+      </section>
+      <section>
+        <p>Make yourself a fortune based on the next year *year date*.</p>
+        <img src="./assets/marriage.jpg" />
+      </section>
+    </div>
+    <div style="text-align: center">
+      <section>
+        <p>What will you call this year?</p>
+        <br />
+        <img src="./assets/us.jpg" id="us" />
+        <p>The Year Of US.</p>
+        <audio controls autoplay id="myaudio">
+          <source
+            src="./assets/Titanic My Heart Will Go On Music Video_CBR_256k.mp3"
+            type="audio/ogg"
+          />
+        </audio>
+      </section>
+    </div>
+
+    <script>
+      const audio = document.getElementById("myaudio");
+      audio.volume = 0.1;
+    </script>
+  </body>
+</html>
