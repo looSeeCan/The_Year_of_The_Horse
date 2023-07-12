@@ -1,38 +1,89 @@
+/* Existing CSS */
+
 html,
 body {
   height: 100%;
 }
 
 html {
-  /* display: table; */
   margin: auto;
 }
 
 body {
-  /* display: table-cell; */
-  /* vertical-align: middle; */
-  /* background-size: cover; */
   background-image: url("./assets/horse3.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 786px) {
-  .mainMenu {
-    display: none;
+/* Responsive Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #f0f0f0; */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  /* text-align: center; */
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
   }
 
-  .mainMenu.hamburger {
+  nav ul li {
     display: block;
+    margin: 10px 0;
+  }
+
+  main,
+  footer {
+    padding: 10px;
   }
 }
 
-@media (min-width: 769px) {
-  .mainMenu {
-    display: initial;
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
   }
 
-  #toggle-bar {
-    display: none;
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  main,
+  footer {
+    padding: 5px;
   }
 }
