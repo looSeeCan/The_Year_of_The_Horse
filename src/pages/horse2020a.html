@@ -6,29 +6,35 @@
     <title>2020,2021</title>
     <style>
       * {
+        box-sizing: border-box;
         outline: red dashed 1px;
       }
 
-      html {
-        height: 100vh;
-        margin: 5px;
-      }
-
+      html,
       body {
-        height: 200vh;
+        height: 100%;
         margin: 5px;
       }
 
       #container {
         border: 3px solid black;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: cener;
+        align-items: center;
+      }
+
+      @media (min-width: 600px) {
+        #container {
+          flex-direction: row;
+        }
       }
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>2020,2021</h1>
+    </header>
     <main id="container">
       <!-- <section id="mainSection"></section> -->
     </main>
