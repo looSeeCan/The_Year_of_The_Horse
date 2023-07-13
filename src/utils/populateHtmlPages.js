@@ -1,4 +1,4 @@
-const populateHtmlPages = () => {
+const populateHtmlPages = (item1) => {
   console.log("Hello");
   /// I need to dynamically populte the sections.
   const questionArrObj = [
