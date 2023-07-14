@@ -28,8 +28,3 @@ app.get("/", (req, res) => {
   console.log(req.body);
   res.send(obj);
 });
-
-app.post("/data", (req, res) => {
-  console.log(req.body);
-  res.send("Data recieved");
-});
