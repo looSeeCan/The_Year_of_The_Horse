@@ -20,7 +20,7 @@ app.listen(port, () => {
 });
 
 // prettier-ignore
-const obj = {"name": "Lucycan", "age": 32}
+const obj = {"name": "Lucycan", "age": 44}
 
 app.get("/", (req, res) => {
   console.log("recieved a get request");
